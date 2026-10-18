@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>emi.tirnovan</title>
+    <title>Emilian Tîrnovan | Software Developer & CS Student</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,254 +11,705 @@
 </head>
 <body>
 
+    <!-- Navigation -->
     <nav>
-        <div class="logo">emi.tirnovan</div>
+        <a href="#about" class="logo">emi.tirnovan</a>
         <ul class="nav-links">
-    <li>
-        <a href="#about">
-            <i class="fas fa-user"></i> About
-        </a>
-    </li>
-    <li>
-        <a href="#education">
-            <i class="fas fa-graduation-cap"></i> Education
-        </a>
-    </li>
-    <li>
-        <a href="#experience">
-            <i class="fas fa-briefcase"></i> Experience
-        </a>
-    </li>
-    <li>
-        <a href="#volunteer">
-            <i class="fas fa-hand-holding-heart"></i> Volunteer
-        </a>
-    </li>
-    <li>
-        <a href="#projects">
-            <i class="fas fa-code"></i> Projects
-        </a>
-    </li>
-    <li>
-        <a href="#contact">
-            <i class="fas fa-paper-plane"></i> Contact
-        </a>
-    </li>
-</ul>
-        <div class="burger">
+            <li>
+                <a href="#about">
+                    <i class="fas fa-user"></i> About
+                </a>
+            </li>
+            <li>
+                <a href="#experience">
+                    <i class="fas fa-briefcase"></i> Experience
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <i class="fas fa-code"></i> Projects
+                </a>
+            </li>
+            <li>
+                <a href="#education">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </a>
+            </li>
+            <li>
+                <a href="#volunteer">
+                    <i class="fas fa-hand-holding-heart"></i> Volunteering
+                </a>
+            </li>
+            <li>
+                <a href="#business">
+                    <i class="fas fa-lightbulb"></i> Ventures
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="fas fa-paper-plane"></i> Contact
+                </a>
+            </li>
+        </ul>
+        <div class="burger" aria-label="Toggle navigation">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero" id="about">
         <div id="tsparticles"></div>
         <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Available for software projects & collaborations
+            </div>
             <h1>Hi, I'm <span class="highlight">Emilian Tîrnovan</span></h1>
-            <h2>Computer Science Student</h2>
-            <p>Passionate about <span class="auto-type"></span></h2>
+            <h2>Computer Science Student & Software Developer</h2>
+            <p class="hero-subtext">Passionate about <span class="auto-type"></span></p>
             <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+                <a href="#experience" class="btn btn-secondary"><i class="fas fa-briefcase"></i> Experience</a>
+                <a href="#business" class="btn btn-secondary"><i class="fas fa-rocket"></i> Ventures</a>
+                <a href="#contact" class="btn btn-ghost"><i class="fas fa-envelope"></i> Contact Me</a>
             </div>
             <div class="social-links">
-                <a href="https://github.com/EmiTirnovan" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/emitirnovan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/emi.tirnovan" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/EmiTirnovan" target="_blank" title="GitHub" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/emitirnovan/" target="_blank" title="LinkedIn" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/emi.tirnovan" target="_blank" title="Facebook" rel="noopener"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
         <div class="hero-img" data-aos="fade-left">
-            <img src="imgs/profile.jpg" alt="Emilian Tîrnovan" data-tilt> 
+            <div class="avatar-wrapper" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2">
+                <img src="imgs/profile-main.png" alt="Emilian Tîrnovan">
+                <div class="avatar-glow"></div>
+            </div>
         </div>
     </header>
 
-    <section id="education" class="section">
-        <h2 class="section-title" data-aos="fade-up">Education</h2>
-        <div class="timeline" data-aos="fade-up">
-            <div class="timeline-item">
-                <span class="date">01/10/2024 - CURRENT</span>
-                <div class="header-with-logo">
-                 <img src="imgs/fii-logo.png" alt="FII Logo" class="institution-logo">
-                <h3>Faculty of Computer Science Iași (UAIC)</h3>
-                 </div>
-                <p>Bachelor's Degree in Computer Science.</p>
-                <a href="https://www.info.uaic.ro/" target="_blank" class="link-small">Visit Website</a>
-            </div>
-            <div class="timeline-item">
-                <span class="date">15/09/2020 - 15/06/2024</span>
-                <div class="header-with-logo">
-                 <img src="imgs/liis-logo.png" alt="LIIS Logo" class="institution-logo">
-                <h3>"Grigore C. Moisil" Computer Science High School</h3>
-                </div>
-                <p>High School Diploma, Mathematics-Informatics profile.</p>
-                <a href="https://liis.ro/" target="_blank" class="link-small">Visit Website</a>
-            </div>
-        </div>
-    </section>
-
+    <!-- 1. Work Experience Section -->
     <section id="experience" class="section bg-dark">
-        <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Career History</span>
+            <h2 class="section-title">Work Experience</h2>
+        </div>
         <div class="timeline" data-aos="fade-up">
             <div class="timeline-item">
-                <span class="date">15/06/2022 - 16/08/2022</span>
-                <h3>Junior Web Developer Internship</h3>
-                <span class="company">STELLAR DEVELOPMENT SRL</span>
-                <p>I worked as a junior web developer at STELLAR DEVELOPMENT SRL during an
-internship, where I developed skills in problem-solving, adaptability, and continuous
-learning.</p>
+                <span class="date">Jun 2022 - Aug 2022</span>
+                <h3>Junior Web Developer Intern</h3>
+                <span class="company"><i class="fas fa-building"></i> STELLAR DEVELOPMENT SRL</span>
+                <p class="timeline-desc">
+                    Engineered interactive, component-based user interfaces with React and JavaScript during an intensive summer internship. 
+                    Integrated third-party REST APIs, resolved cross-browser compatibility issues, collaborated in agile development sprints, 
+                    and built a solid foundation in problem solving, clean code practices, and rapid adaptability.
+                </p>
             </div>
         </div>
     </section>
 
-    <section id="volunteer" class="section">
-        <h2 class="section-title" data-aos="fade-up">Volunteering</h2>
-        <div class="timeline" data-aos="fade-up">
-            <div class="timeline-item">
-                <span class="date">10/10/2024 - CURRENT</span>
-                <div class="header-with-logo">
-                 <img src="imgs/asii-logo.png" alt="ASII Logo" class="institution-logo">
-                <h3>Member of ASII (External Relations)</h3>
-                 </div>
-                <p>I am a member of ASII (The Association of Computer Science Students of Iași)
-in the External Relations department, where I have significantly developed
-my communication skills by building partnerships, fostering collaborations,
-and engaging with various organizations.</p>
-                <p class="contact-note"><i class="fas fa-info-circle"></i> For association management inquiries, contact me at: <a href="mailto:emilian.tirnovan@asii.ro">emilian.tirnovan@asii.ro</a></p>
-                <a href="https://www.asii.ro/" target="_blank" class="link-small">Visit ASII</a>
-            </div>
-            <div class="timeline-item">
-                <span class="date">2023 - Present</span>
-                <div class="header-with-logo">
-                 <img src="imgs/discovereu-logo.jpg" alt="DiscoverEU Logo" class="institution-logo">
-                <h3>DiscoverEU Ambassador</h3>
-                </div>
-                <span class="company">Erasmus+ Projects</span>
-                <p>I am a DiscoverEU ambassador, part of the Erasmus+ projects, where I have honed
-my communication skills by promoting travel opportunities, engaging with young
-people across Europe, and encouraging cultural exchange. </p>
-                <a href="https://youth.europa.eu/discovereu" target="_blank" class="link-small">More Info</a>
-            </div>
+    <!-- 2. Projects Section (Moved before Education) -->
+    <section id="projects" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                A selection of software engineering systems, full-stack web platforms, and academic repositories.
+            </p>
         </div>
-    </section>
 
-    <section id="projects" class="section bg-dark">
-        <h2 class="section-title" data-aos="fade-up">Projects</h2>
         <div class="projects-grid">
             
-            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            <!-- Project 1: Smart House Builder -->
+            <div class="project-card featured-project" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
                 <div class="card-content">
-                    <span class="project-date">Jun 2022 - Aug 2022</span>
-                    <h3>Social App</h3>
-                    <p class="tech-stack">React • JavaScript • APIs</p>
-                    <p>Final project of the internship organized by Stellar Development. A social-style application that
-includes messaging functionality and the ability to save favorite movies, songs, and quotes.
-Through this project, I learned how to integrate and work with external APIs and build component
-based user interfaces.</p>
-                    <a href="https://github.com/Stellar-Intern-Programme/SWGMMMA" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                    <div class="card-top-meta">
+                        <span class="project-date">2025 - 2026</span>
+                        <span class="card-badge badge-featured"><i class="fas fa-star"></i> Featured</span>
+                    </div>
+                    <h3>Smart House Builder</h3>
+                    <p class="project-summary">
+                        A full-stack web application for discovering, configuring, and pricing smart home setups with automated 
+                        compatibility checks, inspired by PCPartPicker. Features interactive multi-room planners, automated hardware validation, 
+                        and cloud infrastructure.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag"><i class="fab fa-aws"></i> AWS RDS</span>
+                        <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-tag">Terraform</span>
+                    </div>
+                    <a href="https://github.com/Ingineria-Programarii-SmartHouseBuilder/smart-house-builder" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
-            
-            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+
+            <!-- Project 2: StrumIT: AI Guitar Studio -->
+            <div class="project-card featured-project" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
                 <div class="card-content">
-                    <span class="project-date">Feb 2026 - Present</span>
+                    <div class="card-top-meta">
+                        <span class="project-date">Feb 2026 - Present</span>
+                        <span class="card-badge badge-featured"><i class="fas fa-guitar"></i> AI Studio</span>
+                    </div>
                     <h3>StrumIT: AI Guitar Studio</h3>
-                    <p class="tech-stack">Angular • Spring Boot • FastAPI • Python</p>
-                    <p>A full-stack AI-powered studio that isolates tracks using Demucs and detects chords via Librosa. Features real-time sync, BPM detection, and smart transposition to turn any YouTube song into an interactive practice session.</p>
-                    <a href="https://github.com/EmiTirnovan/StrumIT" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                    <p class="project-summary">
+                        A full-stack AI-powered music studio that isolates audio tracks using Demucs and detects chords via Librosa. 
+                        Features real-time track synchronization, automated BPM detection, and smart transposition to turn any YouTube song 
+                        into an interactive practice session.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag"><i class="fab fa-java"></i> Spring Boot</span>
+                        <span class="tech-tag"><i class="fab fa-angular"></i> Angular</span>
+                        <span class="tech-tag">Demucs</span>
+                        <span class="tech-tag">Librosa</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/StrumIT" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
-            
-            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+
+            <!-- Project 3: TutorMatch (TutorMECH) -->
+            <div class="project-card featured-project" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
                 <div class="card-content">
-                    <span class="project-date">Dec 2025 - Jan 2026</span>
+                    <div class="card-top-meta">
+                        <span class="project-date">2026 • In Progress</span>
+                        <span class="card-badge badge-neutral"><i class="fas fa-code-branch"></i> In Progress</span>
+                    </div>
+                    <h3>TutorMatch (TutorMECH)</h3>
+                    <p class="project-summary">
+                        A peer tutoring platform for university students featuring AI-powered semantic search with Ollama embeddings 
+                        (and classic keyword fallback), optimistic concurrency booking, strict domain scheduling rules, and state-machine lifecycle management.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C# / .NET Core</span>
+                        <span class="tech-tag"><i class="fas fa-brain"></i> Ollama AI</span>
+                        <span class="tech-tag">Semantic Search</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag">Domain-Driven Design</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/TutorMatch" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4: CampSpot -->
+            <div class="project-card featured-project" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+                <div class="card-content">
+                    <div class="card-top-meta">
+                        <span class="project-date">2025 - 2026</span>
+                        <span class="card-badge badge-featured"><i class="fas fa-campground"></i> Featured</span>
+                    </div>
+                    <h3>CampSpot</h3>
+                    <p class="project-summary">
+                        A comprehensive web platform for camping enthusiasts and campsite owners. Features interactive OpenStreetMap 
+                        exploration with geolocation filtering, custom booking flows, community reviews & media sharing, personalized user dashboards, 
+                        and owner administration tools.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag">Leaflet / OpenStreetMap</span>
+                        <span class="tech-tag">RESTful API</span>
+                        <span class="tech-tag">Google OAuth</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/campspot" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5: Telemedicină -->
+            <div class="project-card featured-project" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+                <div class="card-content">
+                    <div class="card-top-meta">
+                        <span class="project-date">2025 - 2026</span>
+                        <span class="card-badge badge-featured"><i class="fas fa-heartbeat"></i> Medical Platform</span>
+                    </div>
+                    <h3>Telemedicină (Telemedicine Platform)</h3>
+                    <p class="project-summary">
+                        A clinical telemedicine management system connecting patients with medical specialists. 
+                        Includes consultation scheduling, patient health record tracking, electronic prescriptions, doctor calendars, 
+                        and an advanced relational database backend powered by custom stored procedures and triggers.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">Oracle Database / SQL</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/telemedicina" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6: Train Schedule -->
+            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+                <div class="card-content">
+                    <div class="card-top-meta">
+                        <span class="project-date">Dec 2025 - Jan 2026</span>
+                        <span class="card-badge badge-neutral"><i class="fas fa-network-wired"></i> Networks</span>
+                    </div>
                     <h3>Train Schedule (Mersul Trenurilor)</h3>
-                    <p class="tech-stack">C/C++ • Computer Networks</p>
-                    <p>This project implements a TCP-based client–server application that provides real-time train schedule information, including departures, arrivals, delays, and estimated arrival times.
-(Computer Networks Course Project).</p>
-                    <a href="https://github.com/EmiTirnovan/Mersul-Trenurilor" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                    <p class="project-summary">
+                        A multithreaded TCP-based client–server networking application delivering real-time train schedule details, 
+                        including automated departures, arrivals, estimated delays, and route tracking. (Computer Networks Course Project).
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C / C++</span>
+                        <span class="tech-tag">Socket Programming</span>
+                        <span class="tech-tag">TCP / IP</span>
+                        <span class="tech-tag">Multithreading</span>
+                        <span class="tech-tag">POSIX</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/Mersul-Trenurilor" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
-                <div class="card-content" >
-                    <span class="project-date"> Jan 2026 </span>
+            <!-- Project 7: Romanian Pseudocode Compiler -->
+            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+                <div class="card-content">
+                    <div class="card-top-meta">
+                        <span class="project-date">Jan 2026</span>
+                        <span class="card-badge badge-neutral"><i class="fas fa-terminal"></i> Compiler</span>
+                    </div>
                     <h3>Romanian Pseudocode Compiler</h3>
-                    <p class="tech-stack">JavaScript • PLP</p>
-                    <p>A compiler capable of parsing and executing code written in Romanian pseudocode. (Programming Language Principles Project).</p>
-                    <a href="https://github.com/EmiTirnovan/Romanian-Pseudocode-Compiler"target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                    <p class="project-summary">
+                        An educational compiler and execution runtime capable of tokenizing, parsing, and running algorithms written 
+                        in standardized Romanian educational pseudocode. (Programming Language Principles Project).
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag">Compiler Design</span>
+                        <span class="tech-tag">AST Parsing</span>
+                        <span class="tech-tag">Language Theory</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/Romanian-Pseudocode-Compiler" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
-                <div class="card-content">
-                    <span class="project-date">Nov 2024 - Jan 2025</span>
-                    <h3>Mario Game (C++)</h3>
-                    <p class="tech-stack">C++ • Game Logic</p>
-                    <p>A C++ implementation of a simplified Mario-style game, developed as part of the “Introduction to
-Programming” course during the first semester of my first year at the Faculty of Computer Science.
-The project focuses on core programming concepts and game logic.</p>
-                    <a href="https://github.com/EmiTirnovan/Proiect_IP_Mario" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
-                </div>
-            </div>
+        </div>
 
-            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
-                <div class="card-content">
-                    <span class="project-date">Jul 2025 - Ongoing</span>
-                    <h3>Fidelity App</h3>
-                    <p class="tech-stack">React • JavaScript</p>
-                    <p>A digital loyalty application designed for modern coffee shops and their customers. The project
-replaces the traditional paper loyalty card with a fully digital experience. Development is currently
-paused while researching more modern and scalable technologies than React, with the intention
-of resuming and launching the product locally in Iași.</p>
-                    <a href="https://github.com/EmiTirnovan/fidelity" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
-                </div>
-            </div>
+        <!-- Collapsible Projects Grid (View More) -->
+        <div class="projects-grid extra-projects-grid hidden" id="extra-projects">
             
-            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            <!-- Project 8: Mario Game (C++) -->
+            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
                 <div class="card-content">
-                    <span class="project-date">Nov 2025 - Ongoing</span>
-                    <h3>QA Testing Portfolio</h3>
-                    <p class="tech-stack">Playwright • TypeScript</p>
-                    <p>A personal learning project focused on QA Automation fundamentals using Playwright. It includes
-basic end-to-end test scenarios and introduces core concepts such as test structure, assertions,
-and Page Object Model. The project is in an early learning stage and is continuously evolving..</p>
-                    <a href="https://github.com/EmiTirnovan/qa-playwright-portfolio" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                    <div class="card-top-meta">
+                        <span class="project-date">Nov 2024 - Jan 2025</span>
+                        <span class="card-badge badge-neutral"><i class="fas fa-gamepad"></i> Game Dev</span>
+                    </div>
+                    <h3>Mario Game (C++)</h3>
+                    <p class="project-summary">
+                        A C++ implementation of a classic retro platformer game developed for the Introduction to Programming course. 
+                        Focuses on custom game loop architecture, collision physics, map matrices, and sprite logic.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Game Logic</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Data Structures</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/Proiect_IP_Mario" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
                 </div>
+            </div>
+
+            <!-- Project 9: Social App -->
+            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+                <div class="card-content">
+                    <div class="card-top-meta">
+                        <span class="project-date">Jun 2022 - Aug 2022</span>
+                        <span class="card-badge badge-neutral"><i class="fas fa-users"></i> Internship Project</span>
+                    </div>
+                    <h3>Social App</h3>
+                    <p class="project-summary">
+                        Capstone internship project developed at Stellar Development. A responsive social media application that 
+                        includes interactive messaging, media bookmarking, and external REST API integrations.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                    <a href="https://github.com/Stellar-Intern-Programme/SWGMMMA" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 10: Fidelity App Prototype -->
+            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+                <div class="card-content">
+                    <div class="card-top-meta">
+                        <span class="project-date">Jul 2025 - Ongoing</span>
+                        <span class="card-badge badge-neutral"><i class="fas fa-ticket-alt"></i> Prototype</span>
+                    </div>
+                    <h3>Fidelity App Prototype</h3>
+                    <p class="project-summary">
+                        Initial exploratory digital loyalty application designed for local specialty coffee shops. Served as the foundational 
+                        proof-of-concept and architectural study for the forthcoming Fido loyalty platform.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag">Loyalty Architecture</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/fidelity" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 11: QA Testing Portfolio -->
+            <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+                <div class="card-content">
+                    <div class="card-top-meta">
+                        <span class="project-date">Nov 2025 - Ongoing</span>
+                        <span class="card-badge badge-neutral"><i class="fas fa-vial"></i> QA Automation</span>
+                    </div>
+                    <h3>QA Testing Portfolio</h3>
+                    <p class="project-summary">
+                        A personal engineering repository focused on QA Automation fundamentals with Playwright and TypeScript. 
+                        Implements end-to-end testing scenarios, assertions, Page Object Model (POM), and CI test automation pipelines.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Playwright</span>
+                        <span class="tech-tag">E2E Testing</span>
+                        <span class="tech-tag">POM Architecture</span>
+                    </div>
+                    <a href="https://github.com/EmiTirnovan/qa-playwright-portfolio" target="_blank" rel="noopener" class="btn-small">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View More / View Less Toggle Button -->
+        <div class="view-more-container" data-aos="fade-up">
+            <button id="toggle-projects-btn" class="btn btn-view-more">
+                <span class="btn-text">View More Projects (4)</span>
+                <i class="fas fa-chevron-down btn-icon"></i>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- 3. Education Section -->
+    <section id="education" class="section bg-dark">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Academic Background</span>
+            <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <span class="date">Oct 2024 - Present</span>
+                <div class="header-with-logo">
+                    <div class="logo-circle light-bg">
+                        <img src="imgs/fii-logo.png" alt="Faculty of Computer Science Iași" class="institution-logo">
+                    </div>
+                    <div>
+                        <h3>Faculty of Computer Science Iași (UAIC)</h3>
+                        <span class="institution-name">"Alexandru Ioan Cuza" University of Iași</span>
+                    </div>
+                </div>
+                <p class="timeline-desc">
+                    Bachelor of Science in Computer Science. In-depth coursework in Data Structures, Advanced Algorithms, 
+                    Object-Oriented Programming (Java, C++), Computer Networks (TCP/IP), Database Management Systems (SQL/Oracle), 
+                    Operating Systems, and Software Engineering methodologies.
+                </p>
+                <a href="https://www.info.uaic.ro/" target="_blank" rel="noopener" class="link-small">
+                    Visit Official Faculty Website <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">Sep 2020 - Jun 2024</span>
+                <div class="header-with-logo">
+                    <div class="logo-circle light-bg">
+                        <img src="imgs/liis-logo.png" alt="LIIS Logo" class="institution-logo">
+                    </div>
+                    <div>
+                        <h3>"Grigore C. Moisil" Computer Science High School (LIIS)</h3>
+                        <span class="institution-name">Iași, Romania</span>
+                    </div>
+                </div>
+                <p class="timeline-desc">
+                    High School Diploma, Mathematics-Informatics intensive profile. Solid foundation in C/C++ programming, 
+                    algorithmic thinking, competitive problem solving, relational databases, and discrete mathematics.
+                </p>
+                <a href="https://liis.ro/" target="_blank" rel="noopener" class="link-small">
+                    Visit High School Website <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Volunteering Section (Order: ASII -> ISU -> DiscoverEU) -->
+    <section id="volunteer" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Community & Service</span>
+            <h2 class="section-title">Volunteering & Leadership</h2>
+        </div>
+        <div class="timeline" data-aos="fade-up">
+            
+            <!-- 1. ASII & FII Student Summer Camp (FIRST) -->
+            <div class="timeline-item">
+                <span class="date">Oct 2024 - Present</span>
+                <div class="header-with-logo">
+                    <div class="logo-circle light-bg">
+                        <img src="imgs/asii-logo.png" alt="ASII Logo" class="institution-logo">
+                    </div>
+                    <div class="logo-circle transparent-bg">
+                        <img src="imgs/fiistudent-logo.png" alt="FII Student Logo" class="institution-logo" style="transform: scale(1.15);">
+                    </div>
+                    <div>
+                        <div class="title-with-badge">
+                            <h3>ASII Member & Summer Camp Team Leader</h3>
+                            <span class="status-badge badge-leadership"><i class="fas fa-users-cog"></i> Team Leader</span>
+                        </div>
+                        <span class="company">ASII (The Association of Computer Science Students of Iași)</span>
+                    </div>
+                </div>
+                <p class="timeline-desc">
+                    Served as Team Leader at the FII Student summer camp, guiding participants through interactive tech sessions, 
+                    mentoring incoming students, and coordinating team activities. Concurrently involved in the External Relations 
+                    department, managing organizational communication and establishing partnerships for academic initiatives.
+                </p>
+                <div class="links-group">
+                    <a href="https://www.asii.ro/" target="_blank" rel="noopener" class="link-small">
+                        Visit ASII Website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <span class="link-separator">•</span>
+                    <a href="https://fiistudent.asii.ro" target="_blank" rel="noopener" class="link-small">
+                        Visit FII Student Website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <p class="contact-note">
+                    <i class="fas fa-info-circle"></i> Association contact: 
+                    <a href="mailto:emilian.tirnovan@asii.ro">emilian.tirnovan@asii.ro</a>
+                </p>
+            </div>
+
+            <!-- 2. ISU Volunteer Firefighter (SECOND) -->
+            <div class="timeline-item">
+                <span class="date">Active Volunteer</span>
+                <div class="header-with-logo">
+                    <div class="logo-circle light-bg">
+                        <img src="imgs/isu-logo.jpg" alt="ISU Logo" class="institution-logo">
+                    </div>
+                    <div>
+                        <div class="title-with-badge">
+                            <h3>Volunteer Firefighter</h3>
+                            <span class="status-badge badge-emergency"><i class="fas fa-fire-extinguisher"></i> Emergency Services</span>
+                        </div>
+                        <span class="company">ISU — Inspectorate for Emergency Situations (Inspectoratul pentru Situații de Urgență)</span>
+                    </div>
+                </div>
+                <p class="timeline-desc">
+                    Active volunteer firefighter with ISU. Completed rigorous operational training in emergency response, 
+                    rapid crisis intervention, disciplined team coordination under high-stress conditions, and physical resilience. 
+                    Dedicated to community safety and protective civic operations.
+                </p>
+            </div>
+
+            <!-- 3. DiscoverEU Ambassador (THIRD - Only in 2023) -->
+            <div class="timeline-item">
+                <span class="date">2023</span>
+                <div class="header-with-logo">
+                    <div class="logo-circle light-bg">
+                        <img src="imgs/discovereu-logo.jpg" alt="DiscoverEU Logo" class="institution-logo">
+                    </div>
+                    <div>
+                        <h3>DiscoverEU Ambassador</h3>
+                        <span class="company">Erasmus+ • European Commission</span>
+                    </div>
+                </div>
+                <p class="timeline-desc">
+                    Served as a DiscoverEU ambassador during 2023 under the European Union's Erasmus+ program. Promoted youth cultural exchange, 
+                    independent travel opportunities, and cross-border connectivity among young Europeans through community outreach.
+                </p>
+                <a href="https://youth.europa.eu/discovereu" target="_blank" rel="noopener" class="link-small">
+                    DiscoverEU Program Details <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
 
         </div>
     </section>
 
-    <section id="contact" class="section footer">
-        <h2 data-aos="fade-up">Contact Me</h2>
-        <div class="contact-info" data-aos="fade-up">
-            <p><i class="fas fa-map-marker-alt"></i> Iași, Romania</p>
-            <p>
-                <a href="mailto:tirnovan.emilian2004@gmail.com" class="contact-link">
-                    <i class="fas fa-envelope"></i> Write me an e-mail.
-                </a>
-            </p>
-            <p>
-                <a href="tel:+40749888071" class="contact-link">
-                    <i class="fas fa-phone"></i> Give me a call.
-                </a>
+    <!-- 5. Business & Entrepreneurship Section -->
+    <section id="business" class="section bg-dark">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Vision & Ventures</span>
+            <h2 class="section-title">Entrepreneurship & Business</h2>
+            <p class="section-subtitle">
+                Bridging software engineering, digital product incubation, and modern digital promotion.
             </p>
         </div>
-        <div class="footer-socials">
-            <a href="https://www.facebook.com/emi.tirnovan" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://github.com/EmiTirnovan" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/emitirnovan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+        <div class="business-container" data-aos="fade-up">
+            <!-- Founder Card -->
+            <div class="founder-card">
+                <div class="founder-img-wrapper">
+                    <img src="imgs/profile.jpg" alt="Emilian Tîrnovan" class="founder-img">
+                    <span class="founder-badge"><i class="fas fa-compass"></i> Founder & Builder</span>
+                </div>
+                <div class="founder-text">
+                    <div class="venture-badge-pill">
+                        <span class="pulse-indicator"></span> New Venture Direction
+                    </div>
+                    <h3>Building Beyond Code: Digital Products & Promotion</h3>
+                    <p>
+                        I am expanding into the entrepreneurial space with a dedicated focus on building end-to-end digital 
+                        applications and modern digital promotion concepts. Rather than solely developing code, the goal is 
+                        to identify real-world business friction points and deliver scalable, intuitive solutions that generate 
+                        direct commercial value for local businesses and communities.
+                    </p>
+                    <p>
+                        From intelligent customer retention platforms to customized business applications, new digital 
+                        concepts are currently in active incubation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ventures Grid -->
+            <div class="ventures-grid">
+                
+                <!-- Venture 1: ETRN Studio -->
+                <div class="venture-card" data-tilt data-tilt-max="8">
+                    <div class="venture-status-tag">
+                        <span class="coming-soon-badge"><i class="fas fa-clock"></i> COMING SOON</span>
+                    </div>
+                    <div class="venture-logo-box dark-logo-box">
+                        <img src="imgs/etrn-logo.png" alt="ETRN Logo" class="venture-logo">
+                    </div>
+                    <div class="venture-details">
+                        <h4>ETRN</h4>
+                        <span class="venture-role">Digital Concept & Product Studio</span>
+                        <p>
+                            A modern product venture dedicated to conceptualizing, developing, and promoting next-generation 
+                            digital tools and tailored web applications for businesses aiming to modernize their customer touchpoints.
+                        </p>
+                        <div class="venture-tags">
+                            <span class="tag">Digital Solutions</span>
+                            <span class="tag">App Development</span>
+                            <span class="tag">Product Strategy</span>
+                            <span class="tag">Brand Promotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venture 2: FIDO Loyalty App -->
+                <div class="venture-card" data-tilt data-tilt-max="8">
+                    <div class="venture-status-tag">
+                        <span class="coming-soon-badge"><i class="fas fa-layer-group"></i> COMING SOON • PROTOTYPE</span>
+                    </div>
+                    <div class="venture-logo-box light-logo-box">
+                        <img src="imgs/fido-logo.png" alt="Fido Logo" class="venture-logo">
+                    </div>
+                    <div class="venture-details">
+                        <h4>Fido</h4>
+                        <span class="venture-role">Next-Gen Digital Loyalty Platform</span>
+                        <p>
+                            One of the premier incubation prototypes: a smart digital loyalty ecosystem created to replace 
+                            easily lost paper punch-cards. Empowers modern coffee shops, restaurants, and retail spots with frictionless 
+                            QR-based digital rewards, customer retention mechanisms, and merchant analytics.
+                        </p>
+                        <div class="venture-tags">
+                            <span class="tag">Customer Loyalty</span>
+                            <span class="tag">Mobile Rewards</span>
+                            <span class="tag">SaaS Concept</span>
+                            <span class="tag">Retail Tech</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <p class="copyright">© 2026 Emilian Tîrnovan</p>
     </section>
 
+    <!-- 6. Contact Section -->
+    <section id="contact" class="section footer">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Have an inquiry, project idea, or collaboration proposal? Feel free to reach out anytime.
+            </p>
+        </div>
+
+        <div class="contact-cards-container" data-aos="fade-up">
+            <div class="contact-card">
+                <div class="contact-icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h4>Location</h4>
+                <p>Iași, Romania</p>
+            </div>
+
+            <a href="mailto:tirnovan.emilian2004@gmail.com" class="contact-card interactive">
+                <div class="contact-icon-box">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h4>Personal Email</h4>
+                <p>tirnovan.emilian2004@gmail.com</p>
+            </a>
+
+            <a href="mailto:emilian.tirnovan@asii.ro" class="contact-card interactive">
+                <div class="contact-icon-box">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h4>ASII Academic Email</h4>
+                <p>emilian.tirnovan@asii.ro</p>
+            </a>
+
+            <a href="tel:+40749888071" class="contact-card interactive">
+                <div class="contact-icon-box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h4>Phone</h4>
+                <p>+40 749 888 071</p>
+            </a>
+        </div>
+
+        <div class="footer-socials" data-aos="fade-up">
+            <a href="https://github.com/EmiTirnovan" target="_blank" title="GitHub" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/emitirnovan/" target="_blank" title="LinkedIn" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/emi.tirnovan" target="_blank" title="Facebook" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+        <p class="copyright">© 2026 Emilian Tîrnovan. Built with passion & engineering precision.</p>
+    </section>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,90 +1,157 @@
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100
-    });
-    //auto-type
-    if(document.querySelector('.auto-type')) {
-        var typed = new Typed('.auto-type', {
-            strings: ['Web Development.', 'Databases.', 'Volunteering.', 'Photo/Video Editing.', 'Technology and Innovation.'],
-            typeSpeed: 65,
-            backSpeed: 50,
-            backDelay: 3500,
-            loop: false // Am pus true ca să se repete animația
+    // 1. Initialize AOS (Animate on Scroll)
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 60,
+            easing: 'ease-out'
         });
     }
 
-    //burger
+    // 2. Typed.js for dynamic headline typing
+    if (document.querySelector('.auto-type') && typeof Typed !== 'undefined') {
+        new Typed('.auto-type', {
+            strings: [
+                'Full-Stack Web Development.',
+                'Modern Cloud & Systems Architecture.',
+                'Volunteer Firefighting (ISU).',
+                'Digital Product Incubation.',
+                'Tech Community Leadership.'
+            ],
+            typeSpeed: 50,
+            backSpeed: 35,
+            backDelay: 2500,
+            startDelay: 300,
+            loop: true
+        });
+    }
+
+    // 3. Mobile Navigation Burger
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    const menuLinks = document.querySelectorAll('.nav-links a'); 
+    const menuLinks = document.querySelectorAll('.nav-links a');
 
-    if(burger){
+    if (burger && nav) {
         burger.addEventListener('click', () => {
             nav.classList.toggle('nav-active');
-            navLinks.forEach((link, index) => {
-                if (link.style.animation) {
-                    link.style.animation = '';
-                } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                }
-            });
             burger.classList.toggle('toggle');
         });
+
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (nav.classList.contains('nav-active')) {
                     nav.classList.remove('nav-active');
                     burger.classList.remove('toggle');
-                    navLinks.forEach((link) => {
-                        link.style.animation = '';
-                    });
                 }
             });
         });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !burger.contains(e.target) && nav.classList.contains('nav-active')) {
+                nav.classList.remove('nav-active');
+                burger.classList.remove('toggle');
+            }
+        });
     }
 
-    //Vanta.js
+    // 4. View More / View Less Projects Toggle
+    const toggleProjectsBtn = document.getElementById('toggle-projects-btn');
+    const extraProjectsGrid = document.getElementById('extra-projects');
+
+    if (toggleProjectsBtn && extraProjectsGrid) {
+        const btnText = toggleProjectsBtn.querySelector('.btn-text');
+        const btnIcon = toggleProjectsBtn.querySelector('.btn-icon');
+
+        toggleProjectsBtn.addEventListener('click', () => {
+            const isHidden = extraProjectsGrid.classList.contains('hidden');
+
+            if (isHidden) {
+                // Reveal extra projects
+                extraProjectsGrid.classList.remove('hidden');
+                btnText.textContent = 'View Fewer Projects';
+                if (btnIcon) btnIcon.classList.add('rotate');
+
+                // Refresh tilt effect and AOS for newly revealed cards
+                if (typeof VanillaTilt !== 'undefined') {
+                    const newCards = extraProjectsGrid.querySelectorAll('[data-tilt]');
+                    VanillaTilt.init(newCards);
+                }
+                if (typeof AOS !== 'undefined') {
+                    AOS.refresh();
+                }
+            } else {
+                // Hide extra projects
+                extraProjectsGrid.classList.add('hidden');
+                btnText.textContent = 'View More Projects (4)';
+                if (btnIcon) btnIcon.classList.remove('rotate');
+
+                // Smooth scroll back to projects section
+                const projectsSection = document.getElementById('projects');
+                if (projectsSection) {
+                    projectsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    }
+
+    // 5. Vanta.js Waves (Subtle deep graphite & slate tones)
     try {
-        if(document.querySelector('#projects')) {
+        if (document.querySelector('#projects') && typeof VANTA !== 'undefined' && VANTA.WAVES) {
             VANTA.WAVES({
                 el: "#projects",
                 mouseControls: true,
                 touchControls: true,
-                gyroControls: true,
+                gyroControls: false,
                 minHeight: 200.00,
                 minWidth: 200.00,
                 scale: 1.00,
                 scaleMobile: 1.00,
-                color: 0x180B1D
+                color: 0x0f161b,
+                shininess: 12.00,
+                waveHeight: 9.00,
+                waveSpeed: 0.45,
+                zoom: 0.85
             });
         }
     } catch (error) {
-        console.log("Vanta JS nu a putut fi încărcat (posibil lipsesc librăriile din HTML): ", error);
+        console.warn("Vanta JS initialization error: ", error);
     }
 
-    //tsParticles
-    if(document.getElementById("tsparticles")) {
+    // 6. tsParticles (Subtle constellation)
+    if (document.getElementById("tsparticles") && typeof tsParticles !== 'undefined') {
         (async () => {
             await tsParticles.load("tsparticles", {
                 particles: {
-                    number: { value: 50, density: { enable: true, value_area: 800 } },
-                    color: { value: "#ffffff" },
-                    shape: { type: "triangle" },
-                    opacity: { value: 0.5, random: false },
-                    size: { value: 3, random: true },
+                    number: { 
+                        value: 38, 
+                        density: { enable: true, value_area: 850 } 
+                    },
+                    color: { 
+                        value: ["#c9d1d9", "#3fb950"] 
+                    },
+                    shape: { 
+                        type: "circle" 
+                    },
+                    opacity: { 
+                        value: 0.35, 
+                        random: true 
+                    },
+                    size: { 
+                        value: 2.4, 
+                        random: true 
+                    },
                     line_linked: { 
                         enable: true, 
-                        distance: 150, 
-                        color: "#8e44ad", 
-                        opacity: 0.4, 
+                        distance: 140, 
+                        color: "#2ea043", 
+                        opacity: 0.18, 
                         width: 1 
                     },
                     move: { 
                         enable: true, 
-                        speed: 2, 
+                        speed: 1.2, 
                         direction: "none", 
                         random: false, 
                         straight: false, 
@@ -100,7 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         resize: true
                     },
                     modes: {
-                        grab: { distance: 140, line_linked: { opacity: 1 } }
+                        grab: { distance: 140, line_linked: { opacity: 0.4 } },
+                        push: { particles_nb: 2 }
                     }
                 },
                 retina_detect: true
